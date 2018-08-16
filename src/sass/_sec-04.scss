@@ -1,0 +1,111 @@
+.sec-04 {
+  padding-top: 9.5rem;
+  padding-bottom: 8.3rem;
+  position: relative;
+  background-image: url("img/sec-04/bg.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &::before {
+    display: block;
+    content: "";
+    height: pxToRem(120px);
+    width: 1px;
+    background-color: #c23002;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.sec-04__title {
+  font-family: GothaB;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: pxToRem(44px);
+  letter-spacing: .8px;
+  margin-bottom: 1rem;
+}
+
+.sec-04__subtitle {
+  font-family: GothaB;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: pxToRem(20px);
+  color: #545454;
+  letter-spacing: 1.9px;
+  margin-bottom: 3.3rem;
+}
+
+.sec-04__description {
+  font-family: OpenSB;
+  font-size: pxToRem(18px);
+  text-align: center;
+  letter-spacing: 1.08px;
+  margin-bottom: 6.2rem;
+}
+
+.sec-04 {
+  .row {
+    &:first-of-type {
+      margin-bottom: 10.7rem;
+      position: relative;
+      &::before {
+        display: block;
+        content: url("img/sec-04/strategy.png");
+        position: absolute;
+        top: 1.4rem;
+        left: 3.7rem;
+      }
+      [class*=col-] {
+        padding: 0 10.1rem 0 11.9rem;
+        .sec-04__card {
+          &:last-of-type {
+            padding-top: .4rem;
+          }
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      margin-bottom: 11.3rem;
+      [class*=col-] {
+        padding: 0 1.7rem 0 3.6rem;
+        .sec-04__card {
+          &:last-of-type {
+            padding-top: 3.7rem;
+          }
+        }
+      }
+    }
+    &:last-of-type {
+      [class*=col-] {
+        padding: 0 15.4rem 0 15.5rem;
+        .sec-04__card {
+          &:first-of-type {
+            padding-top: .3rem;
+          }
+        }
+      }
+    }
+    [class*=col-] {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.sec-04__card-title {
+  font-family: GothaB;
+  font-size: pxToRem(18px);
+  text-transform: uppercase;
+  letter-spacing: .36px;
+  margin-bottom: 1.1rem;
+}
+
+.sec-04__card-description {
+  font-family: OpenR;
+  font-size: 1rem;
+  line-height: pxToRem(22px);
+  letter-spacing: .32px;
+}

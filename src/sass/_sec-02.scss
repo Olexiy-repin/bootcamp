@@ -1,0 +1,106 @@
+.sec-02 {
+  padding-top: 11.5rem;
+  padding-bottom: 16.2rem;
+  background-image: url("img/sec-02/bg.png");
+  background-position: top;
+  background-size: auto;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  .row {
+    position: relative;
+    z-index: 0;
+    &::before {
+      display: block;
+      content: url("img/sec-02/top-line.png");
+      position: absolute;
+      top: -3.5rem;
+      left: 23.7rem;
+    }
+    &::after {
+      display: block;
+      content: url("img/sec-02/bottom-line.png");
+      position: absolute;
+      bottom: -5.2rem;
+      left: -2.3rem;
+      z-index: -1;
+    }
+  }
+}
+
+.sec-02__number-subtitle {
+  font-family: GothaB;
+  font-size: pxToRem(20px);
+  color: #5e5e5e;
+  text-transform: uppercase;
+  line-height: pxToRem(30px);
+  letter-spacing: .8px;
+  margin-bottom: 1.75rem;
+  padding-left: 1.5rem;
+}
+
+.sec-02__number-description {
+  font-family: OpenSB;
+  font-size: pxToRem(18px);
+  line-height: pxToRem(26px);
+  padding-left: 1.7rem;
+  span {
+    font-family: OpenEB;
+  }
+}
+
+.sec-02__number-block {
+  background-color: #eff0f2;
+  width: 11.2rem;
+  height: 17.5rem;
+  position: relative;
+  margin-bottom: 2.5rem;
+  &::before {
+    display: block;
+    content: url("img/sec-02/left-line.png");
+    position: absolute;
+    bottom: 1.4rem;
+    left: 1.5rem;
+  }
+}
+
+.sec-02__number {
+  font-family: GothaB;
+  font-size: pxToRem(151.5px);
+  position: absolute;
+  top: 50%;
+  right: -5.8rem;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.sec-02 {
+  .row {
+    [class*=col-]:last-of-type {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .sec-02__number-block {
+        margin-bottom: 0;
+        &::before {
+          display: block;
+          content: url("img/sec-02/right-line.png");
+          position: absolute;
+          bottom: 1.7rem;
+          left: 3.4rem;
+        }
+      }
+      .sec-02__number {
+        right: 5.8rem;
+      }
+      .sec-02__number-description {
+        padding-left: 0;
+        margin-bottom: 3.6rem;
+        padding-right: 1.2rem;
+      }
+      .sec-02__number-subtitle {
+        margin-bottom: 1.25rem;
+        padding-left: 1.7rem;
+      }
+    }
+  }
+}

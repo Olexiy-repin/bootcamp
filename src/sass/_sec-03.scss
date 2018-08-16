@@ -1,0 +1,65 @@
+.sec-03 {
+  padding-top: 10.5rem;
+  padding-bottom: 9.3rem;
+  background-image: url("img/sec-03/bg.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  .container--width {
+    max-width: pxToRem(1198px);
+  }
+}
+
+.sec-03__title {
+  font-family: GothaB;
+  font-size: pxToRem(36px);
+  line-height: pxToRem(50px);
+  text-align: right;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 5.4rem;
+  &::before {
+    display: block;
+    content: "";
+    width: pxToRem(301px);
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: -1.5rem;
+    right: .6rem;
+  }
+  span {
+    display: inline-block;
+    background-color: #ffd27c;
+    padding: 0 .8rem;
+    margin-right: .6rem;
+  }
+}
+
+.sec-03__list {
+  padding-right: .4rem;
+  position: relative;
+  &::before {
+    display: block;
+    content: url("img/sec-03/list-style.png");
+    position: absolute;
+    bottom: 0.5rem;
+    right: -8.5rem;
+  }
+}
+
+.sec-03__list-item {
+  text-align: right;
+  font-family: OpenSB;
+  font-size: pxToRem(18px);
+  line-height: pxToRem(30px);
+  margin-bottom: 2.4rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  span {
+    font-family: OpenEB;
+    display: block;
+  }
+}

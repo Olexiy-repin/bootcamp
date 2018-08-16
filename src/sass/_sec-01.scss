@@ -1,0 +1,183 @@
+.sec-01 {
+  background-image: url("img/sec-01/bg.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: .9rem;
+  padding-bottom: 5.7rem;
+  .row {
+    [class*=col-] {
+      text-align: center;
+      padding-top: 2rem;
+    }
+  }
+}
+
+// HEADER
+.sec-01__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6.2rem 1.1rem 5.8rem;
+  border-bottom: 1px solid rgba(256,256,256,.3);
+}
+
+.sec-01__header-description {
+  padding-top: .9rem;
+}
+
+.sec-01__header-paragraph {
+  font-family: GothaR;
+  font-size: pxToRem(14px);
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: .7rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  span {
+    font-family: GothaL;
+    font-size: pxToRem(11px);
+    text-transform: none;
+    font-style: italic;
+    margin-left: 1.3rem;
+  }
+}
+
+.sec-01__header-logo-container {
+  margin-right: 1.2rem;
+}
+
+.sec-01__header-media-container {
+  padding-top: .5rem;
+}
+
+.sec-01__header-media {
+  display: flex;
+  align-items: center;
+  font-family: GothaL;
+  font-size: pxToRem(15px);
+  color: #fff;
+  letter-spacing: .9px;
+  margin-bottom: .7rem;
+  &::before {
+    display: inline-block;
+    content: url("img/sec-01/tel.png");
+    margin-right: .6rem;
+  }
+  &:last-of-type {
+    font-size: pxToRem(13px);
+    letter-spacing: 1.3px;
+    margin-bottom: 0;
+    &::before {
+      content: url("img/sec-01/email.png");
+    }
+  }
+}
+// END HEDER
+
+// MAIN CONTENT
+.sec-01__subtitle {
+  font-family: OpenB;
+  font-size: pxToRem(20px);
+  letter-spacing: 1.6px;
+  color: #fff;
+  width: pxToRem(667px);
+  margin: auto;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 8.9rem;
+  &::before {
+    display: block;
+    content: "";
+    width: pxToRem(150px);
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  &::after {
+    display: block;
+    content: "";
+    width: pxToRem(150px);
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.sec-01__title {
+  font-family: GothaB;
+  font-size: pxToRem(42px);
+  color: #fff;
+  text-transform: uppercase;
+  line-height: pxToRem(55px);
+  margin-bottom: 5.1rem;
+  span {
+    color: #c23002;
+    &:last-of-type {
+      border-bottom: 3px solid #c23002;
+      padding-bottom: .1rem;
+    }
+  }
+}
+
+.sec-01__description-container {
+  width: 53.1rem;
+  margin: auto;
+  padding: 0 3.1rem;
+  position: relative;
+  z-index: 0;
+  &::before {
+    display: block;
+    content: url("img/sec-01/carcass.png");
+    position: absolute;
+    bottom: 2.1rem;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.sec-01__description-paragraph {
+  font-family: GothaM;
+  font-size: pxToRem(20px);
+  color: #fff;
+  letter-spacing: .5px;
+  line-height: pxToRem(32px);
+  margin-bottom: 2.5rem;
+  span {
+    color: #c23002;
+  }
+  &:last-of-type {
+    font-family: GothaB;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: pxToRem(29px);
+    letter-spacing: .64px;
+    margin-bottom: 5.2rem;
+    padding: 0 5rem;
+  }
+}
+
+.sec-01__modal-btn {
+  display: inline-block;
+  background: linear-gradient(to left, #d78f1e, #d78f1e 40%, #ffd27c, #ffd27c 100%) 0 0/200% auto;
+  background-position: center;
+  font-family: GothaB;
+  font-size: pxToRem(18px);
+  text-transform: uppercase;
+  color: #000;
+  width: pxToRem(420px);
+  margin: auto;
+  padding: 1.8rem 0;
+  border-radius: 40px;
+  &:hover {
+    transition: all .3s linear;
+    background-position: right;
+  }
+}
+// END MAIN CONTENT
