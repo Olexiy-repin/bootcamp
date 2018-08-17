@@ -980,6 +980,42 @@ ul {
 	left: -14.3rem;
 }
 
+.sec-06 {
+	padding-top: 1rem;
+	position: relative;
+}
+
+.sec-06::before {
+	display: block;
+	content: "";
+	height: 7.5rem;
+	width: 1px;
+	background-color: #c23002;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.sec-06__title {
+	font-family: GothaB;
+	font-size: 2.8125rem;
+	text-transform: uppercase;
+	line-height: 3.125rem;
+	text-align: center;
+}
+
+.sec-06__subtitle {
+	font-family: GothaB;
+	font-size: 1.3125rem;
+	color: #545454;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.875rem;
+	letter-spacing: 1.26px;
+}
+
 @-webkit-keyframes fadeOut {
 
 0% {
