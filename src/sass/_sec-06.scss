@@ -1,6 +1,12 @@
 .sec-06 {
-  padding-top: 1rem;
+  padding-top: 10rem;
+  padding-bottom: 7.4rem;
   position: relative;
+  background-color: #f6f6f7;
+  background-image: url("img/sec-06/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
   &::before {
     display: block;
     content: "";
@@ -20,6 +26,23 @@
   text-transform: uppercase;
   line-height: pxToRem(50px);
   text-align: center;
+  margin-bottom: 2.3rem;
+  span {
+    position: relative;
+    z-index: 0;
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: -.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ffd27c;
+      width: 18rem;
+      height: 3rem;
+      z-index: -1;
+    }
+  }
 }
 
 .sec-06__subtitle {
@@ -30,4 +53,93 @@
   text-transform: uppercase;
   line-height: pxToRem(30px);
   letter-spacing: 1.26px;
+  margin-bottom: 4.3rem;
+}
+
+.sec-06__tabs-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .6rem;
+}
+
+.sec-06__tabs {
+  width: 48.6%;
+}
+
+.sec-06__tabs-content {
+  width: 49.1%;
+  background-color: #fff;
+  padding-left: 4.3rem;
+  padding-top: 9.7rem;
+}
+
+.sec-06__tab {
+  font-family: GothaB;
+  font-size: pxToRem(18px);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: pxToRem(65px);
+  background-color: #fff;
+  margin-bottom: .65rem;
+  padding-left: 3.4rem;
+  cursor: pointer;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.sec-06__tabs-list {
+  list-style: none;
+}
+
+.sec-06__tabs-list-item {
+  padding-left: 1.3rem;
+  margin-bottom: .85rem;
+  position: relative;
+  &::before {
+    display: block;
+    font-family: GothaB;
+    font-size: pxToRem(18px);
+    counter-increment: number;
+    content: counter(number) ".";
+    position: absolute;
+    top: 0.3rem;
+    left: -1.1rem;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+   p {
+     font-family: OpenR;
+     font-size: pxToRem(16px);
+  }
+}
+
+.active-tab {
+  background-color: #ffd27c;
+  position: relative;
+  &::after {
+    display: block;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: #ffd27c;
+    position: absolute;
+    right: -.8rem;
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+  }
+}
+
+.sec-06__last-tab {
+  font-family: GothaB;
+  font-size: pxToRem(18px);
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: pxToRem(65px);
+  box-shadow: 0 8px 13px rgba(34,34,34,.15);
 }
